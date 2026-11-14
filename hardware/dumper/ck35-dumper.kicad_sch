@@ -1,0 +1,17 @@
+(kicad_sch (version 20230121) (generator eeschema)
+  (uuid "7b1c0e2a-1d44-4a6e-9c31-0a5f2b6d8e10")
+  (paper "A3")
+  (title_block
+    (title "CK-35 cartridge dumper, read only")
+    (date "2026-11-14")
+    (rev "1")
+    (comment 1 "Modified from seto/brother brothercart.sch, CERN OHL 1.2")
+    (comment 2 "Pin 31 tied to GND. Pin 40 sense only. See README.md")
+  )
+  (lib_symbols)
+  (text "READ ONLY DUMPER. Do not connect legacy/pcb-esp32.\nEdge pin numbers are seto KiCad Conn_02x20, verify by continuity.\nPin 2 VCC via 47 ohm after GND. Pin 40 VMEM via 100k/100k to Mega A0, not to 5V.\nPin 31 P31/WERAM1 via 470 ohm to GND, no GPIO.\nPin 34 P34/~WERAM2 pulled to 5V and driven HIGH only.\nA0-A14 Mega 22-36. D0-D7 Mega 37-44 inputs. 470 ohm series.\n~CEROM 46, ~OEROM 47, ~CSRAM 48, P18 49, P33 50, P34 51, P38 52.\nPins 29,32,35,36,37 unconnected on both of seto's sheets."
+    (at 20 20 0)
+    (effects (font (size 2.0 2.0)) (justify left top))
+    (uuid "c3a91f70-6b2e-4d55-8a11-44e0b7c19d22")
+  )
+)

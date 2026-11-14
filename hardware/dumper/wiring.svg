@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+  <rect width="1100" height="720" fill="#f7f4ee"/>
+  <text x="24" y="36" font-family="sans-serif" font-size="22">CK-35 dumper, read only. Verify the finger map before power.</text>
+  <text x="24" y="58" font-family="sans-serif" font-size="13">Pin numbers are seto's KiCad Conn_02x20. Pin 31 is tied to GND. Pin 40 is not powered.</text>
+  <rect x="40" y="90" width="280" height="560" fill="#efe6c9" stroke="#333"/>
+  <text x="56" y="116" font-family="sans-serif" font-size="16">Cartridge edge</text>
+  <text x="56" y="150" font-family="monospace" font-size="13">1, 39 GND</text>
+  <text x="56" y="172" font-family="monospace" font-size="13">2 VCC  -- 47 ohm -- Mega 5V</text>
+  <text x="56" y="194" font-family="monospace" font-size="13">40 VMEM -- divider -- A0</text>
+  <text x="56" y="216" font-family="monospace" font-size="13">9,11,13,15,17,19,21,23 A0-A7</text>
+  <text x="56" y="238" font-family="monospace" font-size="13">26,24,16,22,25,28,27 A8-A14</text>
+  <text x="56" y="260" font-family="monospace" font-size="13">7,5,3,6,8,10,12 D0-D7 inputs</text>
+  <text x="56" y="282" font-family="monospace" font-size="13">14 ~CEROM   20 ~OEROM</text>
+  <text x="56" y="304" font-family="monospace" font-size="13">30 ~CSRAM</text>
+  <text x="56" y="326" font-family="monospace" font-size="13">18 P18   33 P33</text>
+  <text x="56" y="348" font-family="monospace" font-size="13">38 P38 latch clock</text>
+  <text x="56" y="370" font-family="monospace" font-size="13">34 P34 held HIGH</text>
+  <text x="56" y="392" font-family="monospace" font-size="13">31 P31 -- 470 ohm -- GND</text>
+  <text x="56" y="414" font-family="monospace" font-size="13">29 32 35 36 37 open</text>
+  <text x="56" y="460" font-family="sans-serif" font-size="13">470 ohm in series on every</text>
+  <text x="56" y="478" font-family="sans-serif" font-size="13">signal except GND and VCC.</text>
+  <rect x="520" y="90" width="280" height="400" fill="#d9e4f2" stroke="#333"/>
+  <text x="536" y="116" font-family="sans-serif" font-size="16">Arduino Mega 2560</text>
+  <text x="536" y="150" font-family="monospace" font-size="13">22-36  A0-A14 outputs</text>
+  <text x="536" y="172" font-family="monospace" font-size="13">37-44  D0-D7 inputs</text>
+  <text x="536" y="194" font-family="monospace" font-size="13">46 ~CEROM  47 ~OEROM</text>
+  <text x="536" y="216" font-family="monospace" font-size="13">48 ~CSRAM</text>
+  <text x="536" y="238" font-family="monospace" font-size="13">49 P18  50 P33</text>
+  <text x="536" y="260" font-family="monospace" font-size="13">51 P34 always HIGH</text>
+  <text x="536" y="282" font-family="monospace" font-size="13">52 P38</text>
+  <text x="536" y="304" font-family="monospace" font-size="13">A0 sense VMEM</text>
+  <text x="536" y="326" font-family="monospace" font-size="13">0/1 USB serial 115200</text>
+  <text x="536" y="370" font-family="sans-serif" font-size="13">No pin for P31.</text>
+  <text x="536" y="392" font-family="sans-serif" font-size="13">No 5V wire to pin 40.</text>
+  <path d="M320 200 H520" stroke="#333" fill="none"/>
+  <path d="M320 250 H520" stroke="#333" fill="none"/>
+  <path d="M320 300 H520" stroke="#333" fill="none"/>
+  <text x="40" y="690" font-family="sans-serif" font-size="13">Derived from seto/brother brothercart.sch, CERN OHL 1.2. Not a continuity-checked CK-35.</text>
+</svg>
