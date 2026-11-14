@@ -2,6 +2,7 @@
 #include <LittleFS.h>
 
 #include "flashchip.h"
+#include "pattern_editor.h"
 // #include "flashserver.h"
 
 // FlashServer flashServer;
@@ -77,6 +78,7 @@ void verifyImage() {
 
 void setup() {
   Serial.begin(115200);
+  patternEditor.begin();
 
   delay(3000);
   flashChip.init();
@@ -124,4 +126,7 @@ void setup() {
   // digitalWrite(23, LOW);
 }
 
-void loop() { delay(1); }
+void loop() {
+  patternEditor.loop();
+  delay(1);
+}
