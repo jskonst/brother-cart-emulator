@@ -1,0 +1,15 @@
+
+*.o
+*.elf
+*.eep
+*.hex
+*.bin
+*.srec
+*.lst
+*.map
+
+*.pdf
+
+plot/
+fp-info-cache
+*-bak
